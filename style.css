@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+}
+.main{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 19px rgb(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.2s;
+    width: 600px;
+}
+.main:hover{
+    transform: scale(1);
+}
+.headline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+}
+.custom-wrapper{
+    margin: 0;
+    width: 70%;
+    padding: 0 25px 40px;
+    position: relative;
+    left: 60px;
+}
+.header h2{
+    font-size: 24px;
+    color: #48884d;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.input-container{
+    width: 100%;
+
+}
+.input-container .price-field{
+    display: flex;
+    margin-bottom: 22px;
+}
+.price-field span{
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 20px;
+}
+.price-field input{
+    flex: 1;
+    height: 35px;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    background-color: #e4e4e4;
+}
+.price-field{
+    width: 100%;
+    font-size: 15px;
+    color: #555;
+}
+.slider{
+    width: 100%;
+    height: 7px;
+    position: relative;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+.slider .price-slider{
+    height: 100%;
+    left: 25%;
+    right: 15%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #01940b;
+}
+.range-input{
+    position: relative;
+  
+}
+.range-input input{
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: none;
+    top: -6px;
+    pointer-events: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+  
+}
+input[type="range"]::-webkit-slider-thumb{
+    pointer-events: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #555;
+    border: 0;
+    -webkit-appearance: none;
+}
+@media screen and (max-width: 600px){
+    .main{
+        width: 90%;
+    }
+    .custom-wrapper{
+        width: 100%;
+        padding: 0 10px 40px;
+        position: relative;
+        left: 0;
+    }
+    .title{
+        width: 100%;
+        position: relative;
+        right: 26px;
+    }
+    .price-input{
+        flex-direction: column;
+        align-items: center;
+    }
+    .price-field{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
